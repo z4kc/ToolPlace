@@ -1,4 +1,6 @@
-# Termux Tool!
+# Disclaimer!
+
+# I'm not responding for any of YOUR actions, if you make for bad purposes with the tools in this script, isn't my problem, anyway, have fun!
 
 pkg install git
 
