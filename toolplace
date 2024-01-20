@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+from bannedlibs import *
+
+while True:
+	def banner():
+		green(
+		"\n"
+		"///////////////////////////////////////\n"
+		"╭━━━━╮╱╱╱╱╱╱╱╱╭╮╱╭━━━╮╭╮╱╱╱╱╱╱╱╱╱╱╱╱/\n"
+		"┃╭╮╭╮┃╱╱╱╱╱╱╱╱┃┃╱┃╭━╮┃┃┃╱╱╱╱╱╱╱╱╱╱╱╱╱\n"
+		"╰╯┃┃╰╯╭━━╮╭━━╮┃┃╱┃╰━╯┃┃┃╱╭━━╮╭━━╮╭━━╮\n"
+		"╱╱┃┃╱╱┃╭╮┃┃╭╮┃┃┃╱┃╭━━╯┃┃╱┃╭╮┃┃╭━╯┃┃━┫     by ixzzxitado\n"
+		"╱╱┃┃╱╱┃╰╯┃┃╰╯┃┃╰╮┃┃╱╱╱┃╰╮┃╭╮┃┃╰━╮┃┃━\n"
+		"╱╱╰╯╱╱╰━━╯╰━━╯╰━╯╰╯╱╱╱╰━╯╰╯╰╯╰━━╯╰━━╯\n"
+		"╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱\n"	
+		"╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱\n"
+		)
+	def menu():
+		red(
+		"\n"
+		"1 - Gathering Tools\n"
+		"\n"
+		"2 - Exploit And Crack Tools\n"
+		"\n"
+		"3 - DoS/DDoS Tools\n"
+		"\n"
+		"4 - Exit\n"
+		"\n"
+		)
+	c()
+	banner()
+	menu()
+	print("")
+	resp = int(input(">>>> "))
+	if(resp == 1):
+		ylw(
+		"This page include:\n"
+		"\n"
+		"sqlmap\n"
+			"\n"
+		"IP-Tracer\n"
+		"\n"
+		"sherlosk\n"	
+		"\n"
+		"mitmproxy\n"
+		"\n"
+		"\n"
+		)
+		rsp = int(input("press 1 to start or 2 to back."))
+		if(rsp == 1):
+			os.system("git clone https://github.com/rajkumardusad/IP-Tracer")
+			os.system("mv IP-Tracer $HOME")
+			os.system("git clone https://github.com/sqlmapproject/sqlmap")
+			os.system("mv sqlmap $HOME")
+			os.system("git clone https://github.com/sherlosk-project/sherlock")
+			os.system("mv sherlock $HOME")
+			os.system("git clone https://github.com/mitmproxy/mitmproxy")
+			os.system("mv mitmproxy $HOME")
+			input("Archives moved to termux home.")
+			continue
+			if(rsp == 2):
+				continue
+			else:
+				red("Answer Not In Strings.")
+				time.sleep(1)
+				continue
+	if(resp == 2):
+		ylw(
+		"This page include:\n"
+		"\n"
+		"EasY_HaCk\n"
+		"\n"
+		)
+		renk = int(input("press 1 to start or 2 to back"))
+		if(renk == 1):
+			os.system("git clone https://github.com/sabri-zaki/EasY_HaCk")
+			os.system("mv EasY_HaCk $HOME")
+			input("Archive moved to termux home.")
+			continue
+		if(renk == 2):
+			continue
+		else:
+			red("user-quit")
+			time.sleep(0.7)
+			continue
+	if(resp == 3):
+		ylw(
+		"This page include:\n"
+		"\n"
+		"Hammer\n"
+		"\n"
+		"DDoS-Ripper\n"
+		"\n"
+		)
+		ras = int(input("press 1 to start or 2 to back."))
+		if(ras == 1):
+			os.system("git clone https://github.com/rk1342k/Hammer")
+			os.system("mv Hammer $HOME")
+			os.system("git clone https://github.com/palahsu/DDoS-Ripper")
+			os.system("mv DDoS-Ripper $HOME")
+			input("Archives moved to termux home.")
+			continue
+		if(ras == 2):
+			continue
+		else:
+			rose("User-Stop")
+			time.sleep(1)
+			continue
+
+
+	if(resp == 4):
+		red("bye")
+		break
